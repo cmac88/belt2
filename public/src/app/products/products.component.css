@@ -1,0 +1,14 @@
+.header h3{
+    display: inline-block;
+}
+.header a{
+    float: right;
+}
+table{
+    padding: 20px;
+    border: 2px solid black;
+}
+
+table td{
+    padding: 20px;
+}

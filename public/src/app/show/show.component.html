@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <div class="box">
+    <p class='error' *ngIf='product.qty > 0'>Item cannot be deleted until quantity is 0</p>
+    <h3>New Product</h3>
+    <tr>
+      <td>Name:</td>
+      <td>{{ product.name }}</td>
+    </tr>
+    <tr>
+      <td>Qty:</td>
+      <td>{{ product.qty }}</td>
+    </tr>
+    <tr>
+      <td>Price:</td>
+      <td>{{ product.price }}</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button [routerLink]='["/"]'>Back</button> <button [disabled]='product.qty > 0' (click)='delete(product._id)' >Delete</button></td>
+    </tr>
+  </div>
+
+</div>
